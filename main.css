@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+    font-family: helvetica;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: lightgray;
+}
+#copy {
+    width: calc(70% + 24px);
+    border: none;
+    background-color: #46a9d3;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#selection {
+    border-radius: 10mm;
+    background-color: white;
+    width: 80%;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+#dropdown {
+    display: none;
+    margin-left: 10%;
+    width: 80%;
+    background-color: white;
+    text-align: left;
+    font-weight: bold;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 20vh;
+}
+#dropdown span {
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#dropdown span:hover {
+    background-color:  #46a9d3;
+    color: white;
+}
+#template-finder {
+    width: 100%;
+    background-color: #46a9d3;
+    color: #46a9d3;
+    padding: 1%;
+}
+#template {
+    width: 100%;
+    padding-top: 10px;
+}
+#template-fields {
+    text-align: left;
+}
+#template input[type=text],textarea { 
+    width: 80%;
+}
+.fieldDiv {
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#search {
+    text-align: left;
+    display: none;
+    margin-left: 20px;
+    border: none;
+    color: #46a9d3;
+    width: 90%;
+    outline: none;
+}
+#search::placeholder { /*https://www.w3schools.com/howto/howto_css_placeholder.asp*/
+    color: #46a9d3;
+    opacity: 1;
+  }
+#output {
+    border: solid #4dbdec 2px;
+    width: 70%;
+    margin-top: 1%;
+    text-align: left;
+    padding: 10px;
+}
+#header {
+    background-color: white;
+    padding: 20px;
+}
+#arrow-down { /*https://css-tricks.com/snippets/css/css-triangle/*/
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #46a9d3;
+    float: right;
+    margin-right: 20px;
+}
+#arrow-up { /*https://css-tricks.com/snippets/css/css-triangle/*/
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #46a9d3;
+    float: right;
+    margin-right: 20px;
+    display:none;
+  }
+#clear {
+  position: absolute;
+  right: 55px;
+  top: 135px;
+  background-color: white;
+  color: #46a9d3;
+  border: none;
+  -webkit-transform: scale(2); /* Chrome compatability cuz somehow chrome doesn't support the normal scale property*/
+  border: none;
+}
+#yjack-mode {
+  position: absolute;
+  top: 0;
+  right: 35px;
+}

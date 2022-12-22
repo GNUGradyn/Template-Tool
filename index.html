@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Company Template tool</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="header">
+		        <h1 style="margin:0"><span style="color: #46a9d3;">Your Company </span>Template Tool</h1>
+            <h3 style="margin:0">Welcome to the demo template tool by <a href="https://gradyn.com">Gradyn Wursten</a>!</h3>
+        </div>
+        <div id="template-finder">
+            <button id="clear" onclick="clear()">Clear</button>
+            <span id="selection" onclick="toggleDropdown()">
+                <span id="template-title">Select a template</span>
+                <input type="text" id="search" placeholder="Type to start a search" onkeyup="updateSearch()">
+                <div id="arrow-down"></div>
+                <div id="arrow-up"></div>
+            </span>
+            <div id="dropdown">
+                <div id="favorites"></div>
+                <div id="non-favorites"></div>
+            </div>
+            <p style="display: none" id="description"></p>
+        </div>
+        <div id="template"></div>
+        <div class="fieldDiv">
+            <textarea id="output" readonly=true></textarea>
+            <button id="copy" onclick="copy()">Copy!</button>
+        </div>
+    </body>
+</html>

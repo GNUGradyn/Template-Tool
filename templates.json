@@ -1,0 +1,101 @@
+[
+    {"name": "Standard Case",
+     "description": "Template for a standard ticket",
+    "fields": {
+        "Name": {
+            "type": "text",
+            "description": "Name of the user who called in"
+        },
+        "Verified": {
+            "type": "bool"
+        },
+        "Ticket Catagory": {
+            "type": "dropdown",
+            "value": ["Account Management", "Hardware", "Software Licenses", "Other"]
+        },
+        "Issue": {
+            "type": "largetext",
+            "description": "What was the customers reason for calling in"
+        },
+        "Resolution": {
+            "type": "largetext",
+            "description": "A summary of your actions and the customers responses"
+        }
+    }},
+    {"name": "Downtime report",
+     "description": "Use this when filling out a downtime report",
+    "fields": {
+        "Failed Service": {
+            "type": "text",
+            "description": "Which service failed?"
+        },
+        "Service Host": {
+            "type": "dropdown",
+            "value": ["Azure", "On Prem"]
+        },
+        "Downtime affected prod": {
+            "type": "bool",
+            "description": "Did this downtime affect prod?"
+        },
+        "Ensure you submit this ticket to your manager!": {
+            "type": "void"
+        }
+    }},
+    {"name": "Another example 1",
+    "description": "Use this when filling out a downtime report",
+   "fields": {
+       "Failed Service": {
+           "type": "text",
+           "description": "Which service failed?"
+       },
+       "Service Host": {
+           "type": "dropdown",
+           "value": ["Azure", "On Prem"]
+       },
+       "Downtime affected prod": {
+           "type": "bool",
+           "description": "Did this downtime affect prod?"
+       },
+       "Ensure you submit this ticket to your manager!": {
+           "type": "void"
+       }
+   }},
+   {"name": "Another example 2",
+   "description": "Use this when filling out a downtime report",
+  "fields": {
+      "Failed Service": {
+          "type": "text",
+          "description": "Which service failed?"
+      },
+      "Service Host": {
+          "type": "dropdown",
+          "value": ["Azure", "On Prem"]
+      },
+      "Downtime affected prod": {
+          "type": "bool",
+          "description": "Did this downtime affect prod?"
+      },
+      "Ensure you submit this ticket to your manager!": {
+          "type": "void"
+      }
+  }},
+  {"name": "Another example 3",
+  "description": "Use this when filling out a downtime report",
+ "fields": {
+     "Failed Service": {
+         "type": "text",
+         "description": "Which service failed?"
+     },
+     "Service Host": {
+         "type": "dropdown",
+         "value": ["Azure", "On Prem"]
+     },
+     "Downtime affected prod": {
+         "type": "bool",
+         "description": "Did this downtime affect prod?"
+     },
+     "Ensure you submit this ticket to your manager!": {
+         "type": "void"
+     }
+ }}
+]
